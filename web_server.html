@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>灯光画远程遥控服务器</title>
+</head>
+<body>
+<h1 style="text-align:center;font-size:60px;">欢迎使用灯光画远程遥控服务器</h1>
+<hr />
+<h2 style="text-align:center;font-size:50px;">总开关</h2>
+<p style="text-align:center;">
+    <font style="font-size:40px">
+        现在的灯光画已经<b style="color:red;">关闭</b>，点击下列选项可<b>开启</b>灯光画
+    </font> 
+    <form style="text-align:center;">
+        <input type="button" value="开启" style="height:75px;width:175px;" onclick="window.location.href='http://192.168.4.1/ON'">
+    </form>
+</p>
+<hr/>
+<h2 style="text-align:center;font-size:50px;">光色选择</h2>
+<p style="text-align:center;">
+    <font style="font-size:40px">
+        现在的光色模式是<b style="color:red;">晴朗</b>，点击下列选项可切换光色模式
+    </font> 
+    <form style="text-align:center;">
+        <input type="button" value="晴朗" style="height:75px;width:175px;font-size:30px;" onclick="window.location.href='http://192.168.4.1/WH'">
+        <input type="button" value="黄昏" style="height:75px;width:175px;font-size:30px;" onclick="window.location.href='http://192.168.4.1/YL'">
+        <input type="button" value="多云" style="height:75px;width:175px;font-size:30px;" onclick="window.location.href='http://192.168.4.1/CB'">
+    </form>
+</p>
+<hr/>
+
+<h2 style="text-align:center;font-size:50px;">调光模式</h2>
+<p style="text-align:center;">
+    <font style="font-size:40px" >
+        现在的调光模式是<b style="color:red;">自动</b>，点击下列选项可切换调光模式
+    </font>
+    <form style="text-align:center;" >
+        <input type="button" value="自动" style="height:75px;width:175px;font-size:30px;"  onclick="window.location.href='http://192.168.4.1/AU'">
+        <input type="button" value="手动" style="height:75px;width:175px;font-size:30px;"  onclick="window.location.href='http://192.168.4.1/HA'">
+    </form>
+</p>
+<hr /> 
+
+<h2 style="text-align:center;font-size:50px;">亮度调节</h2>
+<p style="text-align:center;">
+    <font style="font-size:40px">
+        现在的亮度是<b style="color:red;">100%</b>，点击下列选项可调节光亮度
+    </font>
+    <br>
+    <font style="color:red;font-size:30px;">
+        注:此功能在<i >自动调光</i>模式下无效
+    </font>
+    <form style="text-align:center;">
+        <input type="button" value="-10%" style="height:75px;width:175px;font-size:30px;color:grey;"   onclick="window.location.href='http://192.168.4.1/SUB'">
+        <input type="button" value="+10%" style="height:75px;width:175px;font-size:30px;"   onclick="window.location.href='http://192.168.4.1/ADD'">
+    </form style="text-align:center;">
+</p>
+<hr/>
+<p style="color:blueviolet;text-align:center;font-size:20px;">
+    Copyright © Tao
+</p>
+</html>
